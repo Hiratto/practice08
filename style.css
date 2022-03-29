@@ -54,4 +54,34 @@ img {
 } 
 
 
+/* Clamp */  
+*, *::before, *::after {  
+/* 最小サイズ、 最大サイズ、 最小画面幅、最大画面幅（単位px） */  
+--min-size: 53;  
+--max-size: 146;  
+--min-viewport: 375;  
+--max-viewport: 1440;  
+
+/* a 傾き */  
+--slope: calc((var(--max-size) - var(--min-size))/ (var(--max-viewport) - var(--min-viewport)));  
+/* b 切片 */  
+--intercept: calc(var(--min-size) - var(--slope) * var(--min-viewport));  
+/* y = ax + b 可変サイズ */  
+--fluid-size: calc(var(--slope) * 100vw + var(--intercept) * 1px);  
+/* clamp(最小サイズ, 可変サイズ, 最大サイズ) */  
+--clamp-size: clamp(var(--min-size) * 1px, var(--fluid-size), var(--max-size) * 1px);  
+} 
+
+
+
+
+/* テキスト （Fluid typography） */  
+
+h1 {  
+  font-size: var(--clamp-size);  
+  font-family: "Lora", serif;  
+  font-weight: 400;  
+} 
+
+
 
