@@ -81,6 +81,10 @@ h1 {
   font-size: var(--clamp-size);  
   font-family: "Lora", serif;  
   font-weight: 400;  
+  background: linear-gradient(92.21deg, #54603f 6.06%, #a2cf4f 95.93%);  
+  -webkit-background-clip: text;  
+  background-clip: text;  
+  -webkit-text-fill-color: transparent; 
 } 
 
 h2,  .subtitle {  
@@ -104,6 +108,10 @@ p {
   font-size: 6.4rem;  
   font-family: "Lora", serif;  
   font-weight: 400; 
+  background: linear-gradient(0.96deg, #54603f 0.35%, #a2cf4f 182.75%);  
+  -webkit-background-clip: text;  
+  background-clip: text;  
+  -webkit-text-fill-color: transparent; 
 } 
 
 
