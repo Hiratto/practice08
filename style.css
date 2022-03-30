@@ -114,5 +114,11 @@ p {
   -webkit-text-fill-color: transparent; 
 } 
 
+/* レイアウト */
+/* セクション間隔 */
 
-
+section + section {
+  --min-size: 140;
+  --max-size: 288;
+  margin-block-start: var(--clamp-size);
+}
