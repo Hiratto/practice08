@@ -122,3 +122,29 @@ section + section {
   --max-size: 288;
   margin-block-start: var(--clamp-size);
 }
+
+/* ====================== */
+/* ヘッダー */
+/* ====================== */
+
+.header {  
+  display: flex;  
+  justify-content: space-between;  
+  align-items: center;  
+  padding-inline: var(--size1);  
+} 
+
+
+/* ロゴ */  
+
+.header-logo {  
+  width: max(94px, var(--size2));  
+}  
+
+/* ハンバーガーボタン */  
+
+.navbtn {  
+  width: max(46px, var(--size1));  
+  aspect-ratio: 1/1;  
+} 
+
