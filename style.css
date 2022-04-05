@@ -164,6 +164,7 @@ section + section {
   height: 2px;  
   background-color: currentColor;  
   grid-area: 1/ 1;  
+  transition: transform 0.5s;
 }  
 
 .navbtn::before {  
@@ -172,6 +173,18 @@ section + section {
 
 .navbtn::after {  
   transform: translateY(12px);  
+} 
+
+.open .navbtn-bar {  
+  transform: scale(0);  
+}  
+
+.open .navbtn::before {  
+  transform: translateY(0) rotate(45deg);  
+}  
+
+.open .navbtn::after {  
+  transform: translateY(0) rotate(-45deg);  
 } 
 
 
