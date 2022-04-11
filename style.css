@@ -123,6 +123,18 @@ section + section {
   margin-block-start: var(--clamp-size);
 }
 
+/* 7列のグリッド */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3,var(--size1))auto repeat(3,var(--size1));
+  row-gap: 44px;
+}
+
+.container > * {
+  grid-column: 2 / -2;
+}
+
 /* ====================== */
 /* ヘッダー */
 /* ====================== */
@@ -200,3 +212,15 @@ section + section {
   position: absolute;
   width: 1px;
 }
+
+/* ヒーロー ----------------- */  
+
+.hero .text {  
+  display: contents;  
+}  
+
+.hero .container > * > * {  
+  grid-column: 2/ -2;  
+} 
+
+
