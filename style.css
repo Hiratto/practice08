@@ -290,3 +290,21 @@ section + section {
   } 
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {  
+  .hero .text {  
+    display: contents;  
+  }  
+  .hero .heading {  
+    grid-column: inherit;  
+    grid-row: inherit;  
+    margin-inline-end: inherit;  
+  }  
+  .hero .body {  
+    grid-column: 1;  
+    grid-row: 2;  
+    width: 80%;  
+    margin-inline-start: var(--size1);  
+  }  
+} 
+
+
