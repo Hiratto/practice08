@@ -307,4 +307,29 @@ section + section {
   }  
 } 
 
+/* セクションの装飾 */
+
+.decor {
+  position: relative;
+}
+
+/* 四角形 */  
+.decor::before {  
+  content:"";  
+  background-color: var(--secondary); 
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+/* 三角形 */  
+.decor::after {  
+  content: url(img/accent.svg);  
+  --min-size: 47;  
+  --max-size: 61;  
+  width: var(--clamp-size);  
+  position: absolute;  
+  line-height: 0;  
+} 
+
 
