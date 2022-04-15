@@ -348,4 +348,17 @@ section + section {
   line-height: 0;  
 } 
 
+.hero.decor::after {  
+  right: 11.2%;  
+  bottom: -11.95%;  
+  transform: rotate(-159deg);  
+}
+
+@media (min-width: 768px) {  
+  .hero.decor::after {  
+    right: 83.6%;  
+    bottom: 87.76%;  
+    transform: rotate(154deg);  
+  }  
+} 
 
