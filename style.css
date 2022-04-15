@@ -322,6 +322,22 @@ section + section {
   z-index: -1;
 }
 
+.hero .decor::before {
+  left: 18.67%;
+  right: 0%;
+  top: 23.69%;
+  bottom: -8.24%;
+}
+
+@media (min-width: 768px) {  
+  .hero.decor::before {  
+    left: 47.43%;  
+    right: 10%;  
+    top: 40.84%;  
+    bottom: 16.39%;  
+  }  
+} 
+
 /* 三角形 */  
 .decor::after {  
   content: url(img/accent.svg);  
