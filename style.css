@@ -428,6 +428,13 @@ section + section {
   bottom: -8.24%;
 }
 
+.sec01.decor::before {  
+  left: 0%;  
+  right: 9.87%;  
+  top: 36.93%;  
+  bottom: -5.72%;  
+} 
+
 @media (min-width: 768px) {  
   .hero.decor::before {  
     left: 47.43%;  
@@ -435,6 +442,12 @@ section + section {
     top: 40.84%;  
     bottom: 16.39%;  
   }  
+  .sec01.decor::before {  
+    left: 0%;  
+    right: 15%;  
+    top: 30.75%;  
+    bottom: -8.02%;  
+  } 
 } 
 
 /* 三角形 */  
@@ -453,11 +466,23 @@ section + section {
   transform: rotate(-159deg);  
 }
 
+.sec01.decor::after {  
+  right: 49.07%;  
+  bottom: -14.51%;  
+  transform: rotate(137deg);  
+} 
+
 @media (min-width: 768px) {  
   .hero.decor::after {  
     right: 83.6%;  
     bottom: 87.76%;  
     transform: rotate(154deg);  
   }  
+
+  .sec01.decor::after {  
+    right: 85.71%;  
+    bottom: -12.53%;  
+    transform: rotate(151deg);  
+  } 
 } 
 
