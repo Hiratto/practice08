@@ -328,20 +328,36 @@ section + section {
   grid-column: 2/ -2;  
 }  
 
+.sec02 .heading {
+  text-align: right;
+}
+
 .sec .body {  
   order: 1;  
   grid-column: 2/ -4;  
 }  
+
+.sec02 .body {
+  grid-column: 4 / -2;
+}
 
 .sec .photo01 {  
   grid-column: 1/ -2;  
   height: 399px;  
 }  
 
+,sec02 .photo01 {
+  grid-column: 2 / -1;
+}
+
 .sec .photo02 {  
   grid-column: 4/ -1;  
   height: 173px;  
 } 
+
+.sec02 .photo02 {
+  grid-column: 1 / -4;
+}
 
 /* More リンク */  
 .more {  
