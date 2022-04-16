@@ -307,6 +307,34 @@ section + section {
   }  
 } 
 
+/* セクション 01 と 02 （モバイル版） ------- */  .sec .container {  
+  row-gap: 24px;  
+}  
+
+.sec .text {  
+  display: contents;  
+}  
+
+.sec .heading {  
+  grid-column: 2/ -2;  
+}  
+
+.sec .body {  
+  order: 1;  
+  grid-column: 2/ -4;  
+}  
+
+.sec .photo01 {  
+  grid-column: 1/ -2;  
+  height: 399px;  
+}  
+
+.sec .photo02 {  
+  grid-column: 4/ -1;  
+  height: 173px;  
+} 
+
+
 /* セクションの装飾 */
 
 .decor {
