@@ -334,6 +334,21 @@ section + section {
   height: 173px;  
 } 
 
+/* More リンク */  
+.more {  
+  display: block;  
+  --min-size: 25;  
+  --max-size: 45;  
+  margin-block-start: var(--clamp-size);  
+  font-family: "Lora", serif;  
+  font-size: 16px;  
+  font-weight: 400;  
+}  
+
+.more::after {  
+  content: url(img/more.svg);  
+  margin-inline-start: 24px;  
+} 
 
 /* セクションの装飾 */
 
