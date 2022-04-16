@@ -422,6 +422,50 @@ section + section {
     margin-block-start: -34px;
   } 
 
+/* セクション 02 （PC 版） ----------------- */  
+
+@media (min-width: 768px) {  
+  .sec02 .container {  
+    grid-template-columns: 540fr 684fr;  
+    grid-template-rows: repeat(2, auto);  
+    grid-template-areas:  
+    "photo01 photo01"  
+    "photo02 text";  
+    gap: var(--size1);  
+    margin-inline-start: var(--size1);  
+  }  
+  
+  .sec02 .text {  
+    display: revert;  
+    grid-area: text;  
+    margin-inline-end: var(--size1);
+  }  
+
+  .sec02 .heading {
+    text-align: left;
+  }
+
+  .sec02 .heading h2 {
+    margin-block: var(--size1-half);
+  }
+
+  .sec02 .body {
+    max-width: 29em;
+  }
+  
+  .sec02 .photo01 {  
+    grid-area: photo01;  
+    margin-inline-start: var(--size2);
+    aspect-ratio: 1224/731;
+    height: auto;
+  }  
+  
+  .sec02 .photo02 {  
+    grid-area: photo02;  
+  } 
+} 
+
+
 /* セクションの装飾 */
 
 .decor {
