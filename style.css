@@ -500,6 +500,45 @@ section + section {
   } 
 } 
 
+/* 記事リスト */  
+
+.posts {  
+  display: flex;  
+  flex-direction: column;  
+  gap: 36px;  }  
+
+.posts figure {  
+  height: 360px;  
+}  
+
+.posts h3 {  
+  --min-size: 16;  
+  --max-size: 18;  
+  font-size: var(--clamp-size);  
+  font-weight: 400;  
+  margin-block-start: 12px;  
+} 
+
+
+@media (min-width: 1024px) {  
+  .posts {  
+    flex-direction: row;  
+    justify-content: space-evenly;  
+  }  
+  
+  .posts li {  
+    flex: 1;  
+    max-width: 335px;  
+  }  
+
+  .posts li:nth-child(2) {  
+    margin-block-start: 140px;  
+  }  
+  .posts li:nth-child(3) {  
+    margin-block-start: 280px;  
+  } 
+} 
+
 /* セクションの装飾 */
 
 .decor {
