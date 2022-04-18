@@ -575,6 +575,14 @@ section + section {
   bottom: -5.81%;
 }
 
+.sec03.decor::before {  
+  left: 0%;  
+  right: 0%;  
+  top: 30.12%;  
+  bottom: 13.63%;  
+} 
+
+
 @media (min-width: 768px) {  
   .hero.decor::before {  
     left: 47.43%;  
@@ -595,6 +603,16 @@ section + section {
     bottom: -7.29%;
   }
 } 
+
+@media (min-width: 1024px) {  
+  .sec03.decor::before {  
+    left: 0%;  
+    right: 0%;  
+    top: 33.61%;  
+    bottom: 10.37%;  
+  }  
+} 
+
 
 /* 三角形 */  
 .decor::after,
@@ -629,6 +647,12 @@ section + section {
   transform: rotate(-159deg);  
 } 
 
+.sec03.decor::after {  
+  right: 64.25%;  
+  bottom: -4.81%;  
+  transform: rotate(164deg);  
+} 
+
 @media (min-width: 768px) {  
   .hero.decor::after {  
     right: 83.6%;  
@@ -656,4 +680,14 @@ section + section {
     transform: rotate(-153deg);  
   } 
 } 
+
+@media (min-width: 1024px) {  
+  .sec03.decor::after {  
+    --max-size: 80;  
+    right: 65.56%;  
+    bottom: 4.85%;  
+    transform: rotate(138deg);  
+  }  
+} 
+
 
