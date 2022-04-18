@@ -465,6 +465,40 @@ section + section {
   } 
 } 
 
+/* セクション 03 ----------------- */  /* テキスト */  
+
+.sec03 h2 {  
+  margin-bottom: 24px;  
+}  
+
+@media (min-width: 768px) {  
+  .sec03 .text {  
+    display: grid;  
+    grid-template-columns: var(--size2) 1fr;  
+    grid-template-rows: repeat(2, auto);  
+    grid-template-areas:  "num heading2"  ". body";  
+    column-gap: var(--size1-half);  
+    align-items: baseline;  
+  }  
+  
+  .sec03 .heading {  
+    display: contents;  
+  }  
+  
+  .sec03 .num {  
+    grid-area: num;  
+  } 
+
+  .sec03 h2 {  
+    grid-area: heading2;
+    margin-block-end: var(--size1-half);  
+  }  
+
+  .sec03 .body {  
+    grid-area: body;  
+    max-width: 34em;  
+  } 
+} 
 
 /* セクションの装飾 */
 
