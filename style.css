@@ -705,6 +705,34 @@ section + section {
   padding-block: 200px;  
 } 
 
+.cta-btn {  
+  --min-size: 20;  
+  --max-size: 36;  
+  font-size: var(--clamp-size);  
+  font-family: "Noto Serif JP", serif;  
+  font-weight: 500;  
+  display: flex;  
+}  
+
+.cta-btn::before {  
+  content: url(img/bars-left.svg);  
+  width: 2em;  
+  margin-top: -1em;
+}  
+
+.cta-btn::after {  
+  content: url(img/bars-right.svg);  
+  width: 2em;  
+  margin-top: -1em;
+} 
+
+.cta-btn a {  
+  padding: 1em;  
+  border-radius: 2em;  
+  color: var(--white);  
+  background-color: var(--accent);  
+} 
+
 /* フッター ----------------- */  
 
 .footer {  
@@ -714,3 +742,20 @@ section + section {
   color: var(--white);  
 } 
 
+/* ロゴ */  
+
+.logo {  
+  --min-size: 120;  
+  --max-size: 200;  
+  width: var(--clamp-size);  
+} 
+
+/* メニュー */  
+
+.menu {  
+  --min-size: 14;  
+  --max-size: 18;  
+  font-size: var(--clamp-size);  
+  display: flex;  
+  gap: 2em;  
+} 
