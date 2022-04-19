@@ -223,6 +223,35 @@ section + section {
   transform: translateY(0) rotate(-45deg);  
 } 
 
+.open .navbtn {  
+  color: var(--white);  
+  z-index: 200;  
+} 
+
+/* ナビゲーションメニュー */  
+
+.nav {  
+  gap: 44px;
+  position: fixed;  
+  top: 0;  
+  right: -100%;  
+  width: 100%;  
+  height: 100%;  
+  z-index: 100;  
+  background: linear-gradient(  0.96deg,  rgba(84, 96, 63, 0.9) 0.35%,  rgba(162, 207, 79, 0.9) 182.75%  );  
+  color: var(--white);  
+  transition: transform 0.5s;
+} 
+
+.open .nav {  
+  transform: translate(-100%, 0);  
+}  
+
+.open {  
+  position: fixed;  
+  overflow: hidden;  
+  width: 100%;  
+} 
 
 /* スクリーンリーダー */
 
