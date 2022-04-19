@@ -151,6 +151,14 @@ section + section {
   grid-column: 2 / -2;
 }
 
+/* 縦横中央 */  
+.center {  
+  display: flex;  
+  flex-direction: column;  
+  justify-content: center;  
+  align-items: center;  
+} 
+
 /* ====================== */
 /* ヘッダー */
 /* ====================== */
@@ -690,4 +698,19 @@ section + section {
   }  
 } 
 
+/* CTA ----------------- */  
+
+.cta {  
+  gap: 30px;  
+  padding-block: 200px;  
+} 
+
+/* フッター ----------------- */  
+
+.footer {  
+  gap: 44px;  
+  padding-block: 100px;  
+  background-color: var(--primary);  
+  color: var(--white);  
+} 
 
